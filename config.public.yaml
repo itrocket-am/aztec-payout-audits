@@ -1,0 +1,25 @@
+# Provider 70 (ITRocket) — config used for every payout run (RPC URL removed).
+# Tool: AztecProtocol/aztec-staking-payout. Upstream example: config.example.yaml.
+
+# ─── Tunables ───
+logChunkSize: "10000"
+stakeLogChunkSize: "10000"
+rpcMaxRequestsPerSecond: 25
+dustThreshold: "1"
+attributionMode: "proposals"
+runsDir: "./runs"
+# Provider 70 registered at this block, so no provider-70 stakes exist before it.
+stakingRegistryDeployedAtBlock: "23912586"
+
+# ─── Network (Ethereum mainnet) ───
+tokenAddress: "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2"            # AZTEC (= StakingRegistry.STAKING_ASSET)
+stakingRegistryAddress: "0x042dF8f42790d6943F41C25C2132400fd727f452"
+rollupAddress: "0xE37A2663Cc9c119BA41572C40fAb0bbb23a5402f"           # v6 (canonical since Oct 2026)
+
+# ─── Operator ───
+providerId: "70"
+# Distribution wallet = coinbase of the legacy delegations since v6 epoch 1504 (19 Nov 2026).
+distributionWalletAddress: "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27"
+commissionBps: 2500
+
+rpcUrl: "<your archival Ethereum mainnet RPC>"

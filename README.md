@@ -1,4 +1,4 @@
-# ITRocket — Aztec delegator payout audits (provider 70)
+# ITRocket: Aztec delegator payout audits (provider 70)
 
 Public audit records for off-chain delegator payouts by **ITRocket**, Aztec staking provider **70**.
 

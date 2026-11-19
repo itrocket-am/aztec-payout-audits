@@ -10,6 +10,8 @@ Aztec bakes the provider commission into each delegation's split contract when t
 - Every week ITRocket pays each delegator **75%** of the rewards their own attesters earned, using [AztecProtocol/aztec-staking-payout](https://github.com/AztecProtocol/aztec-staking-payout).
 - Delegations made after 11 Jun 2026 already have 25% in their split contract and are paid on-chain by the split as usual. They are not part of these payouts.
 
+Delegators don't need to do anything: payouts are sent automatically to the rewards address of each delegation.
+
 ## Parameters
 
 | | |
@@ -30,7 +32,10 @@ Aztec bakes the provider commission into each delegation's split contract when t
 - `runs/EXECUTIONS.md`: one line per payout with the claim and payout transactions.
 - `config.public.yaml`: the tool config used for every run (without the RPC URL).
 
-## How to verify a payout
+## How to verify a payout (optional)
+
+For anyone who wants to check the numbers independently.
+
 
 1. Open the audit JSON. `rewardEarned` must equal the sum of `attributedCheckpoints`, and `rewardReconciliation` shows it matches the rollup's own reward counter for the distribution wallet.
 2. Pick any row in `attributedCheckpoints` and look up its `txHash` on Etherscan: the `propose()` signature recovers to that row's attester, and the checkpoint header coinbase is the distribution wallet.

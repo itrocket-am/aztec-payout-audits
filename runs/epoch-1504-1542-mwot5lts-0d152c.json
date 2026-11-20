@@ -1,0 +1,235 @@
+{
+  "runId": "mwot5lts-0d152c",
+  "startedAt": "2026-11-20T10:00:03.520Z",
+  "finishedAt": "2026-11-20T10:00:24.584Z",
+  "status": "completed",
+  "providerId": "70",
+  "distributionWallet": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+  "token": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+  "transactions": [
+    {
+      "label": "ERC20.approve(Disperse, 2701102534079523643305)",
+      "to": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+      "value": "0",
+      "data": "0x095ea7b3000000000000000000000000d152f549545093347a162dce210e7293f14521500000000000000000000000000000000000000000000000926d53ebb0d574dfa9",
+      "function": "approve",
+      "args": {
+        "token": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+        "spender": "0xD152f549545093347A162Dce210e7293f1452150",
+        "amount": "2701102534079523643305"
+      }
+    },
+    {
+      "label": "Disperse.disperseTokenSimple(2 transfers)",
+      "to": "0xD152f549545093347A162Dce210e7293f1452150",
+      "value": "0",
+      "data": "0x51ba162c000000000000000000000000a27ec0006e59f245217ff08cd52a7e8b169e62d2000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000136205a9148f40f7d7d78f59b35560421b41277e000000000000000000000000ac3e2b760232a413171d539c78008cdb7c18ab52000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000006dcdc3261143da37740000000000000000000000000000000000000000000000249f90c59f919aa835",
+      "function": "disperseTokenSimple",
+      "args": {
+        "from": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+        "token": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+        "transfers": [
+          {
+            "delegator": "0x136205a9148F40F7D7D78f59B35560421b41277e",
+            "amount": "2025521840288169604980",
+            "preRateShare": "2700695787050892806640"
+          },
+          {
+            "delegator": "0xAc3E2B760232A413171D539C78008Cdb7C18ab52",
+            "amount": "675580693791354038325",
+            "preRateShare": "900774258388472051100"
+          }
+        ]
+      }
+    }
+  ],
+  "totals": {
+    "totalForwarded": "2701102534079523643305",
+    "operatorRetention": "900367511359841214435"
+  },
+  "fromEpoch": "1504",
+  "toEpoch": "1542",
+  "fromCheckpoint": "27328",
+  "toCheckpoint": "28563",
+  "fromBlock": "26447969",
+  "toBlock": "26455442",
+  "finalizedBlock": "26455468",
+  "rewardConfig": {
+    "checkpointReward": "500000000000000000000",
+    "sequencerBps": 9000,
+    "sequencerRewardPerCheckpoint": "450000000000000000000"
+  },
+  "checkpointsProposed": 8,
+  "rewardEarned": "3601470045439364857740",
+  "calculationVersion": 2,
+  "rollup": "0xE37A2663Cc9c119BA41572C40fAb0bbb23a5402f",
+  "chainId": 1,
+  "sequencerRewardCalculator": "0xbfa4597532b2bac2b7429EDe41da29E2fe3Ee43D",
+  "rewardReconciliation": {
+    "counterBefore": "0",
+    "counterAfter": "3601470045439364857740",
+    "claimedInWindow": "0",
+    "measuredAccrual": "3601470045439364857740",
+    "modeledAccrual": "3601470045439364857740",
+    "claims": []
+  },
+  "gasCost": {
+    "txCount": 8,
+    "totalGasUsed": "2939440",
+    "totalEthSpentWei": "1747079806702706",
+    "weightedAvgGasPriceWei": "594358043"
+  },
+  "commissionBps": 2500,
+  "attributionMode": "proposals",
+  "outputMode": "disperse",
+  "delegatorCount": 14,
+  "transfers": [
+    {
+      "delegator": "0x136205a9148F40F7D7D78f59B35560421b41277e",
+      "preRateShare": "2700695787050892806640",
+      "amount": "2025521840288169604980",
+      "weight": 6,
+      "attesters": 3
+    },
+    {
+      "delegator": "0xAc3E2B760232A413171D539C78008Cdb7C18ab52",
+      "preRateShare": "900774258388472051100",
+      "amount": "675580693791354038325",
+      "weight": 2,
+      "attesters": 1
+    }
+  ],
+  "attributedCheckpoints": [
+    {
+      "checkpointNumber": "27685",
+      "txHash": "0x9b4003a14bc1b1ad6af2a7b308ae7c459e0ddc6f69af4ece071b48908e5d8eba",
+      "blockNumber": "26450109",
+      "attester": "0xd8f11082CD2d65F96B6F97823b25b7A26b39f9bc",
+      "delegator": "0xAc3E2B760232A413171D539C78008Cdb7C18ab52",
+      "coinbase": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+      "counted": true,
+      "splitAddress": "0xd0FFE2adB99E18E4421cF51681060A5D77Ee49B9",
+      "stakedAtBlock": "24053228",
+      "fixedReward": "450000000000000000000",
+      "sequencerFee": "0",
+      "grossReward": "450000000000000000000"
+    },
+    {
+      "checkpointNumber": "27695",
+      "txHash": "0x1486cb63fd2ba82829ce4a8b8013e6912cb683edc151e2d2426e9930da34c08e",
+      "blockNumber": "26450169",
+      "attester": "0xd8f11082CD2d65F96B6F97823b25b7A26b39f9bc",
+      "delegator": "0xAc3E2B760232A413171D539C78008Cdb7C18ab52",
+      "coinbase": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+      "counted": true,
+      "splitAddress": "0xd0FFE2adB99E18E4421cF51681060A5D77Ee49B9",
+      "stakedAtBlock": "24053228",
+      "fixedReward": "450000000000000000000",
+      "sequencerFee": "774258388472051100",
+      "grossReward": "450774258388472051100"
+    },
+    {
+      "checkpointNumber": "27748",
+      "txHash": "0xde005174906f1f63072f5d078a395bfb6d0b74539d29aeda200359586bbfc49a",
+      "blockNumber": "26450487",
+      "attester": "0x31d858c076eE4EBC6299103d919E4Ac32362F118",
+      "delegator": "0x136205a9148F40F7D7D78f59B35560421b41277e",
+      "coinbase": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+      "counted": true,
+      "splitAddress": "0x6f5950eA2d689494fa005E9DABAc085FbAC3921B",
+      "stakedAtBlock": "23955336",
+      "fixedReward": "450000000000000000000",
+      "sequencerFee": "0",
+      "grossReward": "450000000000000000000"
+    },
+    {
+      "checkpointNumber": "27768",
+      "txHash": "0x8fc8b3977778948fdbad8701d267deade7f51f03621efb191458d8be8a3ec53d",
+      "blockNumber": "26450607",
+      "attester": "0x31d858c076eE4EBC6299103d919E4Ac32362F118",
+      "delegator": "0x136205a9148F40F7D7D78f59B35560421b41277e",
+      "coinbase": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+      "counted": true,
+      "splitAddress": "0x6f5950eA2d689494fa005E9DABAc085FbAC3921B",
+      "stakedAtBlock": "23955336",
+      "fixedReward": "450000000000000000000",
+      "sequencerFee": "0",
+      "grossReward": "450000000000000000000"
+    },
+    {
+      "checkpointNumber": "28112",
+      "txHash": "0x20234369a65fd013d5f318d1bed6bdd532a1c6ad094a5c3188931a60f7e94efe",
+      "blockNumber": "26452703",
+      "attester": "0x31d858c076eE4EBC6299103d919E4Ac32362F118",
+      "delegator": "0x136205a9148F40F7D7D78f59B35560421b41277e",
+      "coinbase": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+      "counted": true,
+      "splitAddress": "0x6f5950eA2d689494fa005E9DABAc085FbAC3921B",
+      "stakedAtBlock": "23955336",
+      "fixedReward": "450000000000000000000",
+      "sequencerFee": "0",
+      "grossReward": "450000000000000000000"
+    },
+    {
+      "checkpointNumber": "28218",
+      "txHash": "0xe4c872a9385e6885917c365cdb5b8263b7c20e068390c0ae752a2552e4094dc3",
+      "blockNumber": "26453353",
+      "attester": "0x4d49AF28930A0aA87c9B88705d774c1E49B3c1aD",
+      "delegator": "0x136205a9148F40F7D7D78f59B35560421b41277e",
+      "coinbase": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+      "counted": true,
+      "splitAddress": "0xD5dAC1934C52Bd84816aE38D47787DEB1BD1D9a8",
+      "stakedAtBlock": "23955366",
+      "fixedReward": "450000000000000000000",
+      "sequencerFee": "695787050892806640",
+      "grossReward": "450695787050892806640"
+    },
+    {
+      "checkpointNumber": "28222",
+      "txHash": "0x1c8cd138ff0ed21f47c3079ebfcccad2fc42e5a1ad661beac17954f24bb68a41",
+      "blockNumber": "26453376",
+      "attester": "0x4d49AF28930A0aA87c9B88705d774c1E49B3c1aD",
+      "delegator": "0x136205a9148F40F7D7D78f59B35560421b41277e",
+      "coinbase": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+      "counted": true,
+      "splitAddress": "0xD5dAC1934C52Bd84816aE38D47787DEB1BD1D9a8",
+      "stakedAtBlock": "23955366",
+      "fixedReward": "450000000000000000000",
+      "sequencerFee": "0",
+      "grossReward": "450000000000000000000"
+    },
+    {
+      "checkpointNumber": "28549",
+      "txHash": "0x32cfd978c5384c256f74a24614b0c1b6fbfdfd7739a6a0a86cae38331f1e8d38",
+      "blockNumber": "26455336",
+      "attester": "0x999BEC6DB51Ccce107C98A3e5f27edA88fCe7E1e",
+      "delegator": "0x136205a9148F40F7D7D78f59B35560421b41277e",
+      "coinbase": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+      "counted": true,
+      "splitAddress": "0xc7aB82354d113Ee4964A4C4F8B9DE4eE5F1ebbdc",
+      "stakedAtBlock": "23955351",
+      "fixedReward": "450000000000000000000",
+      "sequencerFee": "0",
+      "grossReward": "450000000000000000000"
+    }
+  ],
+  "coinbaseFilter": {
+    "mode": "match-distribution-wallet",
+    "expectedCoinbase": "0xBf57b4E7D3cbE8c292f6d29BDAC1070D4F0AFD27",
+    "operatorTotal": 8,
+    "counted": 8,
+    "droppedDueToCoinbaseMismatch": 0
+  },
+  "txHashes": [
+    {
+      "label": "ERC20.approve(Disperse, 2701102534079523643305)",
+      "function": "approve",
+      "hash": "0xdd044c0eefdb8e8822a59a65e384fd043ee2a3031474abf155aca321dfcd58fd"
+    },
+    {
+      "label": "Disperse.disperseTokenSimple(2 transfers)",
+      "function": "disperseTokenSimple",
+      "hash": "0x542fefaa23f8c7b390ca77378f4adc34365319d7c87fd154c9adb2f77ce27fd3"
+    }
+  ]
+}
